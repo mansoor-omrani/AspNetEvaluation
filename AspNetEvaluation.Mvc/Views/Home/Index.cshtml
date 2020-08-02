@@ -1,0 +1,211 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4">
+            <div style="height:500px; overflow-y: scroll;">
+                <h2>Case 1</h2>
+                <ul>
+                    <li><b>action</b> /home/test1</li>
+                    <li><b>method</b> Test1()</li>
+                    <li><b>reset body stream</b> false</li>
+                    <li><b>enctype</b> -</li>
+                </ul>
+
+                <form target="post-target" method="post" action="/home/test1">
+                    FirstName: <input name="FirstName" value="John" /> <br />
+                    LastName: <input name="LastName" value="Doe" /> <br />
+                    Age: <input name="Age" value="25" /> <br />
+                    <input type="submit" />
+                </form>
+                <hr />
+
+                <h2>Case 2</h2>
+                <ul>
+                    <li><b>action</b> /home/test1</li>
+                    <li><b>method</b> Test1()</li>
+                    <li><b>reset body stream</b> false</li>
+                    <li><b>enctype</b> application/x-www-form-urlencoded</li>
+                </ul>
+
+                <form target="post-target" method="post" action="/home/test1" enctype="application/x-www-form-urlencoded">
+                    FirstName: <input name="FirstName" value="John" /> <br />
+                    LastName: <input name="LastName" value="Doe" /> <br />
+                    Age: <input name="Age" value="25" /> <br />
+                    <input type="submit" />
+                </form>
+                <hr />
+
+                <h2>Case 3</h2>
+                <ul>
+                    <li><b>action</b> /home/test1</li>
+                    <li><b>method</b> Test1()</li>
+                    <li><b>reset body stream</b> false</li>
+                    <li><b>enctype</b> multipart/form-data</li>
+                </ul>
+
+                <form target="post-target" method="post" action="/home/test1" enctype="multipart/form-data">
+                    FirstName: <input name="FirstName" value="John" /> <br />
+                    LastName: <input name="LastName" value="Doe" /> <br />
+                    Age: <input name="Age" value="25" /> <br />
+                    <input type="submit" />
+                </form>
+                <hr />
+
+
+                <h2>Case 4</h2>
+                <ul>
+                    <li><b>action</b> /home/test2</li>
+                    <li><b>method</b> Test2(MyModel model)</li>
+                    <li><b>reset body stream</b> false</li>
+                    <li><b>enctype</b> -</li>
+                </ul>
+
+                <form target="post-target" method="post" action="/home/test2">
+                    FirstName: <input name="FirstName" value="John" /> <br />
+                    LastName: <input name="LastName" value="Doe" /> <br />
+                    Age: <input name="Age" value="25" /> <br />
+                    <input type="submit" />
+                </form>
+                <hr />
+
+                <h2>Case 5</h2>
+                <ul>
+                    <li><b>action</b> /home/test2</li>
+                    <li><b>method</b> Test2(MyModel model)</li>
+                    <li><b>reset body stream</b> false</li>
+                    <li><b>enctype</b> application/x-www-form-urlencoded</li>
+                </ul>
+
+                <form target="post-target" method="post" action="/home/test2" enctype="application/x-www-form-urlencoded">
+                    FirstName: <input name="FirstName" value="John" /> <br />
+                    LastName: <input name="LastName" value="Doe" /> <br />
+                    Age: <input name="Age" value="25" /> <br />
+                    <input type="submit" />
+                </form>
+                <hr />
+
+                <h2>Case 6</h2>
+                <ul>
+                    <li><b>action</b> /home/test2</li>
+                    <li><b>method</b> Test2(MyModel model)</li>
+                    <li><b>reset body stream</b> false</li>
+                    <li><b>enctype</b> multipart/form-data</li>
+                </ul>
+
+                <form target="post-target" method="post" action="/home/test2" enctype="multipart/form-data">
+                    FirstName: <input name="FirstName" value="John" /> <br />
+                    LastName: <input name="LastName" value="Doe" /> <br />
+                    Age: <input name="Age" value="25" /> <br />
+                    <input type="submit" />
+                </form>
+                <hr />
+
+                <h2>Case 1r</h2>
+                <ul>
+                    <li><b>action</b> /home/test1r</li>
+                    <li><b>method</b> Test1r()</li>
+                    <li><b>reset body stream</b> true</li>
+                    <li><b>enctype</b> -</li>
+                </ul>
+
+                <form target="post-target" method="post" action="/home/test1r">
+                    FirstName: <input name="FirstName" value="John" /> <br />
+                    LastName: <input name="LastName" value="Doe" /> <br />
+                    Age: <input name="Age" value="25" /> <br />
+                    <input type="submit" />
+                </form>
+                <hr />
+
+                <h2>Case 2r</h2>
+                <ul>
+                    <li><b>action</b> /home/test1r</li>
+                    <li><b>method</b> Test1r()</li>
+                    <li><b>reset body stream</b> true</li>
+                    <li><b>enctype</b> application/x-www-form-urlencoded</li>
+                </ul>
+
+                <form target="post-target" method="post" action="/home/test1r" enctype="application/x-www-form-urlencoded">
+                    FirstName: <input name="FirstName" value="John" /> <br />
+                    LastName: <input name="LastName" value="Doe" /> <br />
+                    Age: <input name="Age" value="25" /> <br />
+                    <input type="submit" />
+                </form>
+                <hr />
+
+                <h2>Case 3r</h2>
+                <ul>
+                    <li><b>action</b> /home/test1r</li>
+                    <li><b>method</b> Test1r()</li>
+                    <li><b>reset body stream</b> true</li>
+                    <li><b>enctype</b> multipart/form-data</li>
+                </ul>
+
+                <form target="post-target" method="post" action="/home/test1r" enctype="multipart/form-data">
+                    FirstName: <input name="FirstName" value="John" /> <br />
+                    LastName: <input name="LastName" value="Doe" /> <br />
+                    Age: <input name="Age" value="25" /> <br />
+                    <input type="submit" />
+                </form>
+                <hr />
+
+
+                <h2>Case 4r</h2>
+                <ul>
+                    <li><b>action</b> /home/test2r</li>
+                    <li><b>method</b> Test2r(MyModel model)</li>
+                    <li><b>reset body stream</b> true</li>
+                    <li><b>enctype</b> -</li>
+                </ul>
+
+                <form target="post-target" method="post" action="/home/test2r">
+                    FirstName: <input name="FirstName" value="John" /> <br />
+                    LastName: <input name="LastName" value="Doe" /> <br />
+                    Age: <input name="Age" value="25" /> <br />
+                    <input type="submit" />
+                </form>
+                <hr />
+
+                <h2>Case 5r</h2>
+                <ul>
+                    <li><b>action</b> /home/test2r</li>
+                    <li><b>method</b> Test2r(MyModel model)</li>
+                    <li><b>reset body stream</b> true</li>
+                    <li><b>enctype</b> application/x-www-form-urlencoded</li>
+                </ul>
+
+                <form target="post-target" method="post" action="/home/test2r" enctype="application/x-www-form-urlencoded">
+                    FirstName: <input name="FirstName" value="John" /> <br />
+                    LastName: <input name="LastName" value="Doe" /> <br />
+                    Age: <input name="Age" value="25" /> <br />
+                    <input type="submit" />
+                </form>
+                <hr />
+
+                <h2>Case 6r</h2>
+                <ul>
+                    <li><b>action</b> /home/test2r</li>
+                    <li><b>method</b> Test2r(MyModel model)</li>
+                    <li><b>reset body stream</b> true</li>
+                    <li><b>enctype</b> multipart/form-data</li>
+                </ul>
+
+                <form target="post-target" method="post" action="/home/test2r" enctype="multipart/form-data">
+                    FirstName: <input name="FirstName" value="John" /> <br />
+                    LastName: <input name="LastName" value="Doe" /> <br />
+                    Age: <input name="Age" value="25" /> <br />
+                    <input type="submit" />
+                </form>
+                <hr />
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <br />
+            <br />
+            <iframe name="post-target" height="400" frameborder="1" style="width:100%">
+            </iframe>
+        </div>
+    </div>
+</div>
